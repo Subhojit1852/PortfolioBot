@@ -46,7 +46,7 @@ def create_qa_chain(vectorstore):
     retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
     prompt = get_prompt_template()
     llm = ChatOpenAI(
-        model="gryphe/mythomax-l2-13b",
+        model="gpt-3.5-turbo",
         temperature=0.3
     )
 
